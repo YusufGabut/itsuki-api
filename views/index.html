@@ -1,321 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
+  <head>
+      <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
-  <meta name="author" content="RRuLL" />
-  <base href="api-itsuki.herokuapp.com" />
+  <meta name="author" content="Itsuki" />
+  <base href="https://tyz-api.herokuapp.com" />
   <link href="https://i.pinimg.com/736x/4b/7e/27/4b7e27dde43758a0544fe9abf6b180b9.jpg" rel="icon" />
-  <title>ITSUKI API</title>
-  <link href="https://indrijunanda.github.io/RuangAdmin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"
-    type="text/css" />
-  <link href="https://indrijunanda.github.io/RuangAdmin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"
-    type="text/css" />
-  <link href="https://indrijunanda.github.io/RuangAdmin/css/ruang-admin.min.css" rel="stylesheet" />
-  <meta property="og:title" content="FREE REST API TOOLS & DOWNLOADER ONLINE " />
-  <meta property="og:description"
-    content="KYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" />
-  <meta property="og:image" content="https://i.pinimg.com/736x/4b/7e/27/4b7e27dde43758a0544fe9abf6b180b9.jpg" />
-  <meta property="og:url" content="index.html" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/androidstudio.min.css" />
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-  </script>
-</head>
-
-<body id="page-top">
-  <div id="wrapper">
-    <ul class="navbar-nav sidebar bg-gray-900 accordion bg-light" id="accordionSidebar"
-      style="color: rgb(8, 247, 255);">
-      <a class="sidebar-brand d-flex align-items-center justify-content-center bg-gray-900"
-        style="color: rgb(7, 255, 201);">
-        <span style="color: rgb(255, 255, 255);">FREE REST API</span>
-      </a>
-      <hr class="sidebar-divider my-0" />
-      <li class="nav-item active">
-        <a class="nav-link">
-          <i class="fas fa-fw fa-code"></i>
-          <span>Documentation</span></a>
-      </li>
-      <hr class="sidebar-divider" />
-      <div class="sidebar-heading">Features</div>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
-          aria-expanded="true" aria-controls="collapseBootstrap">
-          <i class="fas fa-fw fa-arrow-down"></i>
-          <span>Downloader API</span>
-        </a>
-        <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
-          <div class="bg-black py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Downloader Features</h6>
-            <a class="collapse-item" href="/downloader/youtube?link=https://www.youtube.com/watch?v=YLiRgeU7fQw">Youtube Downloader</a>
-            <a class="collapse-item" href="/downloader/tiktok?link=https://vm.tiktok.com/ZSJcLPNpe/">Tiktok Downloader</a>
-            <a class="collapse-item" href="/downloader/tiktoknowm?link=https://vm.tiktok.com/ZSJcLPNpe">Tiktok Nowatermark</a>
-            <a class="collapse-item" href="/downloader/tiktokaudio?link=https://vm.tiktok.com/ZSJcLPNpe">Tiktok Audio</a>
-            <a class="collapse-item" href="/downloader/igdl?link=https://www.instagram.com/p/CTEDAEbpE4A/?utm_source=ig_web_copy_link">Instagram Downloader</a>
-            <a class="collapse-item" href="/downloader/fbdl?link=https://www.facebook.com/AnnaTami.chan/videos/1259337391211843">Facebook Downloader</a>
-            <a class="collapse-item" href="/downloader/twitter?link=https://twitter.com/PassengersMovie/status/821025484150423557">Twitter Downloader</a>
-            <a class="collapse-item" href="/downloader/likeedl?link=https://likee.video/@vicky_marpaung/video/7006676628722311449">Likee Downloader</a>
-            <a class="collapse-item" href="/downloader/pindl?link=https://id.pinterest.com/pin/361906520063070744">Pinterest Downloader</a>
-            <a class="collapse-item" href="/downloader/sfiledl?link=http://www.solidfiles.com/v/zdpVXjvRk8yaV">Solidfiles Downloadaer</a>
-            <a class="collapse-item" href="/downloader/mediafireDl?link=https://www.mediafire.com/file/pwxob70rpgma9lz/GBWhatsApp_v8.75%2528Tutorial_Yud%2529.apk/file">Mediafire Downloader</a>
-            <a class="collapse-item" href="/downloader/scdl?link=https://soundcloud.com/user-943750457/jang-ganggu-shine-of-black">Soundcloud Downloader</a>
-            <a class="collapse-item" href="/downloader/stickerpack?link=https://getstickerpack.com/stickers/pentol-7">Stickerpack Downloader</a>
-          </div>
+    <title>Velgrynd - API</title>
+    <meta property="og:site_name" name="og:site_name" content="Velgrynd APIs">
+    <meta property="og:title" name="og:title" content="Velgrynd - REST APIs">
+    <meta property="og:url" name="og:url" content="https://api-velgrynd.herokuapp.com/">
+    <meta property="og:image" name="og:image" content="../images/logo.png">
+    <meta property="og:description" name="og:description" content="Free Rest Api For You">
+    <link rel="stylesheet" href="../vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
+    <iframe src="../audio/audio.mp3" hidden="hidden" allow="autoplay"; encrypt-media></iframe>
+    </head>
+  
+  <body>
+  <body id="page-top" onload="getvisitor();">
+    <div class="container-scroller">
+      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
         </div>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSearch" aria-expanded="true"
-            aria-controls="collapseSearch">
-            <i class="fas fa-fw fa-search"></i>
-            <span>Search API</span>
-          </a>
-          <div id="collapseSearch" class="collapse" aria-labelledby="headingSearch" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Search API Features</h6>
-              <a class="collapse-item" href="/search/pinterest?query=animep">Pinterest Search</a>
-              <a class="collapse-item" href="/search/konachan?query=azur_lane">ZeroChan Search</a>
-              <a class="collapse-item" href="/search/sticker?query=pentol">StickerPack Search</a>       
-              <a class="collapse-item" href="/search/google?query=anime">Google Search</a>      
-              <a class="collapse-item" href="/search/tiktok?query=anime">Tiktok Search</a>                                                       
-             </div>
-          </div>
-        </li>
-       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePhotooxy"
-          aria-expanded="true" aria-controls="collapsePhotooxy">
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <span>Photooxy</span>
-        </a>
-        <div id="collapsePhotooxy" class="collapse" aria-labelledby="headingPhotooxy" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Photooxy Features</h6>
-            <a class="collapse-item" href="/photooxy/shadow?text=Hai">shadow</a>
-            <a class="collapse-item" href="/photooxy/cup?text=Hai">cup</a>
-            <a class="collapse-item" href="/photooxy/captain_amerika?text=Hai&text_2=hai juga">captain amerika</a>
-            <a class="collapse-item" href="/photooxy/romantic?text=Hai">romantic</a>
-            <a class="collapse-item" href="/photooxy/smoke?text=Hai">smoke</a>
-            <a class="collapse-item" href="/photooxy/burn_paper?text=Hai">burn paper</a>
-            <a class="collapse-item" href="/photooxy/naruto?text=Hai">naruto</a>
-            <a class="collapse-item" href="/photooxy/love_message?text=Hai">love message</a>
-            <a class="collapse-item" href="/photooxy/tik_tok?text=Hai&text_2=hai juga">TikTok</a>
-            <a class="collapse-item" href="/photooxy/flower_heart?text=Hai">flower heart</a>
-            <a class="collapse-item" href="/photooxy/wodden_board?text=Hai">wodden board</a>
-            <a class="collapse-item" href="/photooxy/glowing_neon?text=Hai">glowing neon</a>
-          </div>
-        </div>
-      </li>
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOthers" aria-expanded="true"
-            aria-controls="collapseOthers">
-            <i class="fas fa-fw fa-leaf"></i>
-            <span>Primbon API</span>
-          </a>
-          <div id="collapseOthers" class="collapse" aria-labelledby="headingOthers" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">primbon Features</h6>
-              <a class="collapse-item" href="/primbon/artinama?nama=arya">Artinama</a>
-              <a class="collapse-item" href="/ramalanjodoh?nama=arya&pasangan=maysha">Ramal Jodoh</a>
-            </div>
-          </div>
-        </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRandom" aria-expanded="true"
-          aria-controls="collapseRandom">
-          <i class="fa fa-camera-retro" aria-hidden="true"></i>
-          <span>Random Image</span>
-        </a>
-        <div id="collapseRandom" class="collapse" aria-labelledby="headingRandom" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Random Img Features</h6>
-             <a class="collapse-item" href="/randomimg/milf">Milf</a>
-             <a class="collapse-item" href="/randomimg/waifu">Waifu</a>
-             <a class="collapse-item" href="/randomimg/husbu">Husbu</a>
-             <a class="collapse-item" href="/randomimg/loli">Loli</a>
-             <a class="collapse-item" href="/randomimg/cosplay">Cosplay</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAnime" aria-expanded="true"
-          aria-controls="collapseAnime">
-          <i class="fas fa-fw fa-bullseye"></i>
-          <span>NSFW API</span>
-        </a>
-        <div id="collapseAnime" class="collapse" aria-labelledby="headingAnime" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">NSFW API Features</h6>
-            <a class="collapse-item" href="/nsfw/doujindesuSearch?query=shota">Doujindesu Search</a>
-            <a class="collapse-item" href="/nsfw/nHentaiSearch?query=miku">Nhentai Search</a>
-            <a class="collapse-item" href="/nsfw/nHentai?code=212121">Nhentai Info</a>
-            <a class="collapse-item" href="/nsfw/nhentaipdf?code=212121">Nhentai Downloader</a>      
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGames" aria-expanded="true" aria-controls="collapseForm">
-            <i class="app-menu__icon fa fa-laptop"></i>
-            <span>Kuis & Fun API</span>
-        </a>
-        <div id="collapseGames" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-            <div class="py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Kuis Features</h6>
-            <a class="collapse-item" href="/games/tebakgambar">Tebak Gambar</a>
-         </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCheck" aria-expanded="true"
-          aria-controls="collapseCheck">
-          <i class="fas fa-fw fa-check"></i>
-          <span>Convert API</span>
-        </a>
-        <div id="collapseCheck" class="collapse" aria-labelledby="headingCheck" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Convert API Features</h6>
-            <a class="collapse-item" href="/converter/towebp?url=https://i.ibb.co/7CM77tx/c180e14f43cf.jpg">jpg To webp</a>
-            <a class="collapse-item" href="/converter/tomp3?url=https://tinyurl.com/55e43fy3">Mp4 To mp3</a>
-          </div>
-        </div>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseother" aria-expanded="true"
-          aria-controls="collapseother">
-          <i class="fab fa-fw fa-wpforms"></i>
-          <span>Other API</span>
-        </a>
-        <div id="collapseother" class="collapse" aria-labelledby="headingother" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Other API Features</h6>
-            <a class="collapse-item" href="/other/nulis?text=%20aku%20sayang%20kamu%20>%20///<">Nulis Buku</a>
-            <a class="collapse-item" href="/other/ttp?text=love you <3">Text to Picture</a>
-            <a class="collapse-item" href="/other/attp?text=love you <3">Text to Gif</a>
-            <a class="collapse-item" href="/other/ssweb?link=https://tyz-api.herokuapp.com">ScreenShoot web</a>
-            <a class="collapse-item" href="/other/removebg?link=https://images-na.ssl-images-amazon.com/images/I/51vhBLpXhCL.jpg">Remove bg</a>
-          </div>
-        </div>
-      </li>
-      <hr class="sidebar-divider" />
-      <div class="version" id="version-ruangadmin"></div>
-    </ul>
-
-    <div id="content-wrapper" class="d-flex flex-column">
-      <div id="content">
-        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top bg-gray-900">
-          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
-            <i class="fa fa-bars"></i>
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-menu"></span>
           </button>
-          <ul class="navbar-nav ml-auto">
-            <div class="topbar-divider d-none d-sm-block"></div>
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <img class="img-profile rounded-circle"
-                  src="https://i.pinimg.com/736x/4b/7e/27/4b7e27dde43758a0544fe9abf6b180b9.jpg"
-                  style="max-width: 100px" />
-                <span class="ml-2 d-none d-lg-inline text-white small"></span>
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item nav-profile dropdown">
+              <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                <div class="nav-profile-img">
+                  <img src="../images/logo.png" alt="image">
+                  <span class="availability-status online"></span>
+                </div>
+                <div class="nav-profile-text">
+                  <p class="mb-1 text-black">Velgrynd</p>
+                </div>
               </a>
+              <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+                <a class="dropdown-item" href="/about">
+                  <i class="mdi mdi-creation menu-icon"></i> About </a>
+              </div>
+            </li>
+            <li class="nav-item d-none d-lg-block full-screen-link">
+              <a class="nav-link">
+                <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                <i class="mdi mdi-bell-outline"></i>
+                <span class="count-symbol bg-danger"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                <h6 class="p-3 mb-0">Notifications</h6>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-success">
+                      <i class="mdi mdi-calendar"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="preview-subject font-weight-normal mb-1">Welcome To Velgrynd API</h6>
+                   </div>
+                </a>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <div class="container-fluid page-body-wrapper">
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item nav-profile">
+              <a class="nav-link">
+                <div class="nav-profile-image">
+                  <img src="../images/logo.png" alt="profile">
+                  <span class="login-status online"></span>
+                </div>
+                <div class="nav-profile-text d-flex flex-column">
+                  <span class="font-weight-bold mb-2">Velgrynd</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <span class="menu-title">Dashboard</span>
+                <i class="mdi mdi-home menu-icon"></i>
+              </a>
+            </li>
+           <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-sosmed" aria-expanded="false" aria-controls="ui-sosmed">
+              <span class="menu-title">Social Media API</span>
+              <i class="menu-arrow"></i>
+              <i class="mdi mdi-laptop menu-icon"></i>
+            </a>
+            <div class="collapse" id="ui-sosmed">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" target="_blank" href="/api/tiktok?url=https://vt.tiktok.com/ZSe8Xfwd1">Tiktok Download</a></li>
+                <li class="nav-item"> <a class="nav-link" target="_blank" href="/api/igdl?url=https://www.instagram.com/p/CTMnneTl8YJ/?utm_medium=copy_link">Instagram Download</a></li>
+                <li class="nav-item"> <a class="nav-link" target="_blank" href="/api/youtube?url=https://youtu.be/5C8yvJUVB-0">Youtube Download</a></li>
+                <li class="nav-item"> <a class="nav-link" target="_blank" href="/api/twitter?url=https://twitter.com/PassengersMovie/status/821025484150423557">Twitter Download</a></li>
+                <li class="nav-item"> <a class="nav-link" target="_blank" href="/api/pindl?url=https://id.pinterest.com/pin/361906520063070744">Pinterest Download</a></li>
+                <li class="nav-item"> <a class="nav-link" target="_blank" href="/api/mediafire?url=https://www.mediafire.com/file/pwxob70rpgma9lz/GBWhatsApp_v8.75%2528Tutorial_Yud%2529.apk/file">MediaFire Download</a></li>
+              </ul>
+            </div>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-animanga" aria-expanded="false" aria-controls="ui-animanga">
+              <span class="menu-title">Anime & Manga API</span>
+              <i class="menu-arrow"></i>
+              <i class="mdi mdi-cat menu-icon"></i>
+            </a>
+            <div class="collapse" id="ui-animanga">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" target="_blank" href="/api/nhentai?code=298547">Nhentai</a></li>
+                <li class="nav-item"> <a class="nav-link" target="_blank" href="/api/nHentaiSearch?query=gotoubun">Nhentai Search</a></li>
+                <li class="nav-item"> <a class="nav-link" target="_blank" href="/api/doujindesuSearch?query=gotoubun">Doujindesu Search</a></li>
+              </ul>
+            </div>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-search" aria-expanded="false" aria-controls="ui-search">
+              <span class="menu-title">Searching API</span>
+              <i class="menu-arrow"></i>
+              <i class="mdi mdi-book-search menu-icon"></i>
+            </a>
+            <div class="collapse" id="ui-search">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" target="_blank" href="/api/google?query=kapan+indonesia+merdeka">Google Search</a></li>
+                <li class="nav-item"> <a class="nav-link" target="_blank" href="/api/pinterest?query=itsuki+nakano">Pinterest Search</a></li>
+              </ul>
+            </div>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-image" aria-expanded="false" aria-controls="ui-image">
+              <span class="menu-title">Random Image API</span>
+              <i class="menu-arrow"></i>
+              <i class="mdi mdi-image menu-icon"></i>
+            </a>
+            <div class="collapse" id="ui-image">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" target="_blank" href="/api/randomimage/waifu">Ramdom Waifu</a></li>
+                <li class="nav-item"> <a class="nav-link" target="_blank" href="/api/randomimage/neko">Random Neko</a></li>
+                <li class="nav-item"> <a class="nav-link" target="_blank" href="/api/randomimage/husbu">Random Husbu</a></li>
+                <li class="nav-item"> <a class="nav-link" target="_blank" href="/api/randomimage/loli">Random Loli</a></li>
+                <li class="nav-item"> <a class="nav-link" target="_blank" href="/api/randomimage/milf">Random Milf</a></li>
+                <li class="nav-item"> <a class="nav-link" target="_blank" href="/api/randomimage/cosplay">Random Cosplay</a></li>
+              </ul>
+            </div>
+          </li>
+          
+          <li class="nav-item sidebar-actions">
+              <span class="nav-link">
+                <div class="border-bottom">
+                  <h6 class="font-weight-normal mb-3">Made With ❤️ Velgrynd</h6>
+                </div>
+                <div class="mt-4">
+                <span class="menu-icon">
+                     <i class="mdi mdi-whatsapp"></i>
+                   </span>
+                 <a class="menu-title" href="https://wa.me/6288286421519">WhatsApp</a>
+                </div>
+                <div class="mt-4">
+                <span class="menu-icon">
+                     <i class="mdi mdi-instagram"></i>
+                   </span>
+                 <a class="menu-title" href="https://instagram.com/ultimareall">Instagram</a>
+                </div>
+                <div class="mt-4">
+                <span class="menu-icon">
+                     <i class="mdi mdi-github-circle"></i>
+                   </span>
+                 <a class="menu-title" href="https://github.com/ultimareall">GitHub</a>
+                </div>
+              </span>
             </li>
           </ul>
         </nav>
-        <div class="container-fluid" id="container-wrapper">
-          <div id="demo" class="alert alert-dark alert-dismissible" role="alert">
-            <div id="browser_info"></div>
-            <script>
-              let arrBulan = [
-                "Januari",
-                "Februari",
-                "Maret",
-                "April",
-                "Mei",
-                "Juni",
-                "Juli",
-                "Agustus",
-                "September",
-                "Oktober",
-                "November",
-                "Desember",
-              ];
-              let txt = "";
-              txt +=
-                "<p><b>Browser CodeName</b>: " +
-                navigator.appCodeName +
-                "</p>";
-              txt += "<p><b>Browser Name</b>: " + navigator.appName + "</p>";
-              txt +=
-                "<p><b>Cookies Enabled</b>: " +
-                navigator.cookieEnabled +
-                "</p>";
-              txt += "<p><b>Browser Online</b>: " + navigator.onLine + "</p>";
-              txt += "<p><b>Platform</b>: " + navigator.platform + "</p>";
-              txt += "<p><b>User-agent</b>: " + navigator.userAgent + "</p>";
-              let text_el = document.querySelector("div#browser_info");
-              setInterval(() => {
-                var d = new Date();
-                const jam = d.getHours().toString().padStart(2, 0);
-                const menit = d.getMinutes().toString().padStart(2, 0);
-                const detik = d.getSeconds().toString().padStart(2, 0);
-                const tgl = d.getDate();
-                const bln = d.getMonth();
-                const thn = d.getFullYear();
-                const bulan = arrBulan[bln];
-                text_el.innerHTML =
-                  txt +
-                  "<b>Date</b>: " +
-                  jam +
-                  ":" +
-                  menit +
-                  ":" +
-                  detik +
-                  "~" +
-                  tgl +
-                  "-" +
-                  bulan +
-                  "-" +
-                  thn +
-                  "<br>Welcome back!";
-              }, 250);
-            </script>
-          </div>
-          <div class="row">
-<div class="col-xl-12 col-lg-12 col-md-12">
-<div class="card">
-<div class="card-header">
-<h4 class="card-title">Made with ❤️ by <a href="https://github.com/Arya-was" target="_blank">Arya</a></h4>
-</div>
-<div class="card-body text-sm-left font-weight-bold">Jangan di Bully mastah, Saya cuma gabut bikin Api monggo di pakai btw source code nya di <a href="https://github.com/Arya-was/simple-api" target="_blank">Sini</a> yak</div>
-</div>
-</div>
-</div>
-<span> <br> </span>
-          <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-              <div class="copyright text-center my-auto">
-                <span>copyright &copy;
-                  <script>
-                    document.write(new Date().getFullYear());
-                  </script>
-                  <b><a href="https://github.com/Arya-was"
-                      target="_blank">Arya</a></b>
-                </span>
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="page-header">
+              <h3 class="page-title">
+                <span class="page-title-icon bg-gradient-primary text-white mr-2">
+                  <i class="mdi mdi-home"></i>
+                </span> Dashboard
+              </h3>
+              <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="row">
+              <div class="col-md-4 stretch-card grid-margin">
+                <div class="card ngentod-merah card-img-holder text-white">
+                  <div class="card-body">
+                    <h4 class="font-weight-normal mb-3">IP Address <i class="mdi mdi-access-point-network mdi-24px float-right"></i>
+                    </h4>
+                    <h2 class="mb-5" id="ip">Waiting...</h2>
+                    <h6 class="card-text">Your IP Address</h6>
+                  </div>
+                </div>
               </div>
+              <div class="col-md-4 stretch-card grid-margin">
+                <div class="card ngentod-biru card-img-holder text-white">
+                  <div class="card-body">
+                    <h4 class="font-weight-normal mb-3">Visitor <i class="mdi mdi-eye mdi-24px float-right"></i>
+                    </h4>
+                    <h2 class="mb-5" id="visitor">Waiting...</h2>
+                    <h6 class="card-text">Visitor This Web</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 stretch-card grid-margin">
+                <div class="card ngentod-ungu card-img-holder text-white">
+                  <div class="card-body">
+                    <h4 class="font-weight-normal mb-3">Date <i class="mdi mdi-calendar mdi-24px float-right"></i>
+                    </h4>
+                    <h2 class="mb-5" id="datetime">Waiting...</h2>
+                    <h6 class="card-text">Date Now</h6>
+                  </div>
+                </div>
+              </div>
+          <footer class="footer">
+            <div class="container-fluid clearfix">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © Velgrynd 2021</span>
             </div>
           </footer>
         </div>
       </div>
     </div>
+    
+    <script src="../vendors/js/vendor.bundle.base.js"></script>
+    <script src="../vendors/chart.js/Chart.min.js"></script>
+    <script src="../js/off-canvas.js"></script>
+    <script src="../js/hoverable-collapse.js"></script>
+    <script src="../js/misc.js"></script>
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/todolist.js"></script>
+    <script src="../js/ipanda.js"></script>
+    <script src="../js/waktu.js"></script>
+    <script src="../js/visitor.js"></script>
+  </body> 
 
-    <a class="scroll-to-top rounded" href="#page-top">
-      <i class="fas fa-angle-up"></i>
-    </a>
-    <script src="https://indrijunanda.github.io/RuangAdmin/vendor/jquery/jquery.min.js"></script>
-    <script src="https://indrijunanda.github.io/RuangAdmin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://indrijunanda.github.io/RuangAdmin/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="https://indrijunanda.github.io/RuangAdmin/js/ruang-admin.min.js"></script>
-  </div>
-</body>
 
+ 
+
+ 
 </html>
